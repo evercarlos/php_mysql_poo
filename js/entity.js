@@ -28,9 +28,9 @@ function addgrid() {
                 var tr = $('<tr></tr>');
                 var td_1 = $('<td>' + item.name + '</td>');
                 var td_2 = $('<td>' + item.dni + '</td>');
-                var td_3 = $('<td width="25%"></td>');
-                var a_edit = $('<a id="' + item.id + '" href="javascript:void(0)" class="btn btn-success edit_e">Editar</a>');
-                var a_delete = $('<a id="' + item.id + '" href="javascript:void(0)"  class="btn btn-danger delete_e">Eliminar</a>');
+                var td_3 = $('<td></td>');
+                var a_edit = $('<a id="' + item.id + '" href="javascript:void(0)" class="btn btn-success edit_e btn-sm"><i class="fas fa-edit"></i></a>');
+                var a_delete = $('<a id="' + item.id + '" href="javascript:void(0)"  class="btn btn-danger delete_e btn-sm"><i class="far fa-trash-alt"></i></a>');
                 td_3.append(a_edit).append(a_delete);
                 tr.append(td_1).append(td_2).append(td_3);
                 //console.log('hola');

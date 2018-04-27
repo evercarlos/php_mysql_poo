@@ -1,7 +1,9 @@
 <html>
 <head>
     <title>PhpAndMysql</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
@@ -49,26 +51,57 @@
         </div>
         <div class="row">
             <div class="div_grid">
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Dni</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody id="e_grid"></tbody>
-                </table>
-                <div style="background-color: #e6edef; height: 5%; margin-top: -2.5%">
-                    <ul class="pagination" style="margin-top: 0.2%;width: 100%; font-size: 11px">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
+                <div class="col-sm-13">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Dni</th>
+                            <th style="width: 7%"></th>
+                        </tr>
+                        </thead>
+                        <tbody id="e_grid"></tbody>
+                    </table>
+                    <div style="background-color: #e6edef; height: 5%; margin-top: -1.6%">
+                        <ul class="pagination" style="font-size: 11px; display: inline;">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                        <span style="display: inline;">&nbsp;Página:</span>
+                        <span style="display: inline;">
+                            <select style="height: 30px; padding: 3px 4px">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </span>
+                        <span style="display: inline">&nbsp;Ver por Página:</span>
+                        <span style="display: inline">
+                            <select style="height: 30px; padding: 3px 4px">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                            </select>
+                        </span>
+                        <span style="display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span style="display: inline">Registros</span>
+                    </div>
                 </div>
             </div>
         </div>
