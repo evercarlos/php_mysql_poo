@@ -15,10 +15,6 @@
                     <input type="hidden" id="e_id">
                     <input type="text" id="e_name" class="form-control">
                 </div>
-                <div class="col-sm-4"></div>
-                <div class="col-sm-2">
-                    <button id="btn_new_entity" class="btn btn-primary">Nuevo</button>
-                </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2"> Dni</label>
@@ -32,26 +28,47 @@
                     <button id="save_entity" class="btn btn-sm btn-primary">Guardar</button>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="col-sm-10">
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-left:2%">
+    <div class="col-sm-11">
+        <div class="row" style="background-color: #e6edef">
+            <div class="col-sm-7"></div>
+            <div class="col-sm-4">
+                <div class="input-group input-group-sm">
                     <input id="e_search" type="text" class="form-control">
-                </div>
-                <div class="col-sm-2">
+                    <span class="input-group-btn">
                     <button id="btn_search" class="btn btn-primary">Buscar</button>
+                    </span>
                 </div>
             </div>
+            <div class="col-sm-1" style="margin-left: -2%">
+                <button id="btn_new_entity" class="btn btn-success btn-sm">Nuevo</button>
+            </div>
+        </div>
+        <div class="row">
             <div class="div_grid">
-                <div class="form-group">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Dni</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody id="e_grid"></tbody>
-                    </table>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Dni</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody id="e_grid"></tbody>
+                </table>
+                <div style="background-color: #e6edef; height: 5%; margin-top: -2.5%">
+                    <ul class="pagination" style="margin-top: 0.2%;width: 100%; font-size: 11px">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

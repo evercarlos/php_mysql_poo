@@ -18,7 +18,8 @@ $(document).ready(function () {
 function addgrid() {
     params = {
         'method': 'list',
-        'search': e_search.val()
+        'search': e_search.val(),
+        'rows': 10
     }
     $.post('aplication/entityController.php', params, function (response) {
         if (response.status === true) {

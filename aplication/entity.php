@@ -13,7 +13,7 @@ class entity extends conecction
     public function search($s)
     {
         try {
-            $sql = "SELECT * FROM entity WHERE name LIKE '$s%'or dni LIKE '%$s%'";
+            $sql = "SELECT * FROM entity WHERE name LIKE '$s%'or dni LIKE '%$s%' LIMIT 10";
             $result = mysql_query($sql) or die('error al buscar o seleccionar');
             while ($row = mysql_fetch_array($result)) {
                 $data[] = [
