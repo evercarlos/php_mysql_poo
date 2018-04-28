@@ -25,7 +25,7 @@ class entityController
                     'id' => $dat['id'],
                     'name' => $dat['name'],
                     'dni' => $dat['dni'],
-                    'birth_date' => (is_null($dat['birth_date'])) ? '' : Carbon::parse($dat['birth_date'])->format('d/m/Y')
+                    'birth_date' => (is_null($dat['birth_date'])) ? '' : ($dat['birth_date'] == '0000-00-00') ? '' : Carbon::parse($dat['birth_date'])->format('d/m/Y')
                 ];
             }
             echo json_encode([
@@ -44,8 +44,11 @@ class entityController
     {
         try {
             $data = $request;
+            Carbon::setLocale('es');
             $repo = new entity();
-            $data['birth_date'] = ($data['birth_date'] != '') ? Carbon::createFromFormat('d/m/Y', $data['birth_date']) : null;
+            $data['birth_date'] = ($data['birth_date'] == "") ? null : Carbon::createFromFormat('d/m/Y', $data['birth_date']);
+            // echo $data['birth_date'];
+            //var_dump($data['birth_date']);
             if ($data['id'] != 0) {
                 $repo->update($data['id'], $data);
             } else {
@@ -70,7 +73,7 @@ class entityController
             $data = new entity();
             $data = $data->find($id);
 
-            $data['birth_date'] = (is_null($data['birth_date'])) ? '' : Carbon::parse($data['birth_date'])->format('d/m/Y');
+            $data['birth_date'] = (is_null($data['birth_date'])) ? '' : ($data['birth_date'] = '0000-00-00') ? '' : Carbon::parse($data['birth_date'])->format('d/m/Y');
 
             echo json_encode([
                 'status' => true,

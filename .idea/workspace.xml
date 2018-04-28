@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f772a462-1d33-42f0-be0a-fbe3b6bdd245" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/aplication/entity.php" afterPath="$PROJECT_DIR$/aplication/entity.php" />
       <change beforePath="$PROJECT_DIR$/aplication/entityController.php" afterPath="$PROJECT_DIR$/aplication/entityController.php" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/entity.js" afterPath="$PROJECT_DIR$/js/entity.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="entity.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aplication/entity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="271">
+              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
                 <marker date="1524875305204" expanded="true" signature="227:287" ph="SELECT * FRO... entity" />
@@ -54,8 +50,8 @@
       <file leaf-file-name="entityController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aplication/entityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="522">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
@@ -254,10 +250,10 @@
     <findStrings>
       <find>conecction</find>
       <find>findEntity</find>
-      <find>find</find>
       <find>createUpdate</find>
       <find>birth_date</find>
       <find>method</find>
+      <find>find</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -271,8 +267,8 @@
         <option value="$PROJECT_DIR$/aplication/entityRepository.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/entity.js" />
-        <option value="$PROJECT_DIR$/aplication/entityController.php" />
         <option value="$PROJECT_DIR$/aplication/entity.php" />
+        <option value="$PROJECT_DIR$/aplication/entityController.php" />
       </list>
     </option>
   </component>
@@ -367,12 +363,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524837455694</updated>
       <workItem from="1524837457280" duration="18402000" />
-      <workItem from="1524869696223" duration="5056000" />
+      <workItem from="1524869696223" duration="5998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23458000" />
+    <option name="totallyTimeSpent" value="24400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -859,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aplication/entity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="271">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
             <marker date="1524875305204" expanded="true" signature="227:287" ph="SELECT * FRO... entity" />
@@ -881,8 +877,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aplication/entityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="522">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
