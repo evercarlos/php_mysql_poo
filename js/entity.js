@@ -5,14 +5,20 @@ var e_dni = $("#e_dni");
 var e_search = $("#e_search");
 var btn_search = $("#btn_search");
 var e_birth_date = $("#e_birth_date");
+var btn_new_entity = $("#btn_new_entity");
 
 $(document).ready(function () {
 
     btn_search.click(function () {
         addgrid();
     });
+
     e_search.keyup(function () {
         addgrid();
+    });
+
+    btn_new_entity.click(function () {
+        cleanEntity();
     });
 
     $("#save_entity").click(function () {
@@ -31,7 +37,7 @@ $(document).ready(function () {
             }
             $.post('aplication/entityController.php', params, function (response) {
                 if (response.status) {
-                    //clearEntity();
+                    cleanEntity();
                     addgrid();
                     swal("Good", "Guardado correctamente", "success");
                 } else {
@@ -102,6 +108,13 @@ function findEntity(id) {
             swal("error", "error!", "error");
         }
     }, 'json');
+}
+
+function cleanEntity() {
+    e_id.val('');
+    e_dni.val('');
+    e_name.val('');
+    e_birth_date.val('');
 }
 
 function deleteEntity(id) {

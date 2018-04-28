@@ -73,7 +73,7 @@ class entityController
             $data = new entity();
             $data = $data->find($id);
 
-            $data['birth_date'] = (is_null($data['birth_date'])) ? '' : ($data['birth_date'] = '0000-00-00') ? '' : Carbon::parse($data['birth_date'])->format('d/m/Y');
+            $data['birth_date'] = (is_null($data['birth_date'])) ? '' : ($data['birth_date'] == '0000-00-00') ? '' : Carbon::parse($data['birth_date'])->format('d/m/Y');
 
             echo json_encode([
                 'status' => true,

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f772a462-1d33-42f0-be0a-fbe3b6bdd245" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/aplication/entityController.php" afterPath="$PROJECT_DIR$/aplication/entityController.php" />
+      <change beforePath="$PROJECT_DIR$/js/entity.js" afterPath="$PROJECT_DIR$/js/entity.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="entityController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aplication/entityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="77" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
@@ -62,8 +63,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="55" />
+            <state relative-caret-position="206">
+              <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -235,10 +236,10 @@
       <file leaf-file-name="entity.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/entity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1524873433131" expanded="true" signature="1763:1782" ph="..." />
+                <marker date="1524876517363" expanded="true" signature="1876:1895" ph="..." />
               </folding>
             </state>
           </provider>
@@ -254,6 +255,9 @@
       <find>birth_date</find>
       <find>method</find>
       <find>find</find>
+      <find>new</find>
+      <find>cleanEntity</find>
+      <find>btn_new_entity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -265,9 +269,9 @@
         <option value="$PROJECT_DIR$/aplication/conecction.php" />
         <option value="$PROJECT_DIR$/aplication/entityInterface.php" />
         <option value="$PROJECT_DIR$/aplication/entityRepository.php" />
+        <option value="$PROJECT_DIR$/aplication/entity.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/entity.js" />
-        <option value="$PROJECT_DIR$/aplication/entity.php" />
         <option value="$PROJECT_DIR$/aplication/entityController.php" />
       </list>
     </option>
@@ -363,12 +367,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524837455694</updated>
       <workItem from="1524837457280" duration="18402000" />
-      <workItem from="1524869696223" duration="5998000" />
+      <workItem from="1524869696223" duration="6435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24400000" />
+    <option name="totallyTimeSpent" value="24837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -470,7 +474,7 @@
         <state relative-caret-position="608">
           <caret line="32" column="122" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="1" />
           <folding>
-            <marker date="1524873433131" expanded="true" signature="1763:1782" ph="..." />
+            <marker date="1524876517363" expanded="true" signature="1876:1895" ph="..." />
           </folding>
         </state>
       </provider>
@@ -672,10 +676,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aplication/entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1524875305204" expanded="true" signature="227:287" ph="SELECT * FRO... entity" />
+            <marker date="1524875305204" expanded="true" signature="227:296" ph="SELECT * FRO... entity" />
+            <marker date="1524875305204" expanded="true" signature="861:905" ph="SELECT * FRO... entity" />
+            <marker date="1524875305204" expanded="true" signature="1421:1564" ph="INSERT INTO entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:1904" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:1932" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:1937" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:1966" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:1977" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:2044" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="1880:2056" ph="UPDATE entity... " />
+            <marker date="1524875305204" expanded="true" signature="2305:2346" ph="DELETE FROM entity... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="206">
+          <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -845,40 +871,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/entity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1524873433131" expanded="true" signature="1763:1782" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplication/entity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1524875305204" expanded="true" signature="227:287" ph="SELECT * FRO... entity" />
-            <marker date="1524875305204" expanded="true" signature="227:296" ph="SELECT * FRO... entity" />
-            <marker date="1524875305204" expanded="true" signature="861:905" ph="SELECT * FRO... entity" />
-            <marker date="1524875305204" expanded="true" signature="1421:1564" ph="INSERT INTO entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:1904" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:1932" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:1937" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:1966" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:1977" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:2044" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="1880:2056" ph="UPDATE entity... " />
-            <marker date="1524875305204" expanded="true" signature="2305:2346" ph="DELETE FROM entity... " />
+            <marker date="1524876517363" expanded="true" signature="1876:1895" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aplication/entityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="77" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
