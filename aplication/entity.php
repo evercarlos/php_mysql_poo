@@ -20,6 +20,7 @@ class entity extends conecction
                     'id' => $row['id'],
                     'name' => $row['name'],
                     'dni' => $row['dni'],
+                    'birth_date' => $row['birth_date']
                 ];
             }
             return $data;
@@ -37,11 +38,38 @@ class entity extends conecction
             $data = [
                 'id' => $row[0],
                 'name' => $row[1],
-                'dni' => $row[2]
+                'dni' => $row[2],
+                'birth_date' => $row[3],
             ];
 
             return $data;
 
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+    }
+
+    public function create($attributes)
+    {
+        try {
+            $sql = "INSERT INTO entity(name,dni,birth_date) VALUES('" . $attributes['name'] . "','" . $attributes['dni'] . "', '" . $attributes['birth_date'] . "')";
+            mysql_query($sql) or die('Error al guardar');
+            // retornar el ultmo registro
+            //end
+            return '';
+        } catch (Exception $e) {
+            return $e->getMessage();
+        }
+    }
+
+    public function update($id, $attributes)
+    {
+        try {
+            $sql = "UPDATE entity SET name='" . $attributes['name'] . "',dni='" . $attributes['dni'] . "',birth_date='" . $attributes['birth_date'] . "' 
+                    WHERE id='" . $id . "'";
+            mysql_query($sql) or die('Error al actualizar');
+
+            return '';
         } catch (Exception $e) {
             return $e->getMessage();
         }

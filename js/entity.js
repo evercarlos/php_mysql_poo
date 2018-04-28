@@ -4,6 +4,7 @@ var e_name = $("#e_name");
 var e_dni = $("#e_dni");
 var e_search = $("#e_search");
 var btn_search = $("#btn_search");
+var e_birth_date = $("#e_birth_date");
 
 $(document).ready(function () {
 
@@ -12,7 +13,34 @@ $(document).ready(function () {
     });
     e_search.keyup(function () {
         addgrid();
-    })
+    });
+
+    $("#save_entity").click(function () {
+        // para validaciones
+        var b_val = true;
+        //b_val = b_val && e_name.required();
+        // b_val = b_val && e_dni.required();
+
+        if (b_val) {
+            params = {
+                'method': 'createUpdate',
+                'id': (e_id.val() === '') ? 0 : e_id.val(),
+                'name': e_name.val(),
+                'dni': e_dni.val(),
+                'birth_date': e_birth_date.val(),
+            }
+            $.post('aplication/entityController.php', params, function (response) {
+                if (response.status) {
+                    //clearEntity();
+                    addgrid();
+                    swal("Good", "Guardado correctamente", "success");
+                } else {
+                    swal("error", "error!", "error");
+                }
+            }, 'json');
+        }
+    });
+
 });
 
 function addgrid() {
@@ -28,11 +56,12 @@ function addgrid() {
                 var tr = $('<tr></tr>');
                 var td_1 = $('<td>' + item.name + '</td>');
                 var td_2 = $('<td>' + item.dni + '</td>');
-                var td_3 = $('<td></td>');
+                var td_3 = $('<td style="text-align: center;">' + item.birth_date + '</td>');
+                var td_4 = $('<td></td>');
                 var a_edit = $('<a id="' + item.id + '" href="javascript:void(0)" class="btn btn-success edit_e btn-sm"><i class="fas fa-edit"></i></a>');
                 var a_delete = $('<a id="' + item.id + '" href="javascript:void(0)"  class="btn btn-danger delete_e btn-sm"><i class="far fa-trash-alt"></i></a>');
-                td_3.append(a_edit).append(a_delete);
-                tr.append(td_1).append(td_2).append(td_3);
+                td_4.append(a_edit).append(a_delete);
+                tr.append(td_1).append(td_2).append(td_3).append(td_4);
                 //console.log('hola');
                 e_grid.append(tr);
 
@@ -68,6 +97,7 @@ function findEntity(id) {
             e_id.val(data.id);
             e_name.val(data.name);
             e_dni.val(data.dni);
+            e_birth_date.val(data.birth_date);
         } else {
             swal("error", "error!", "error");
         }

@@ -7,15 +7,27 @@
  */
 
 require_once 'entity.php';
+require '../vendor/autoload.php';
+
+use Carbon\Carbon;
 
 class entityController
 {
     public function seach($s)
     {
         try {
-            $data = new entity();
-            $data = $data->search($s);
+            $data_repo = new entity();
+            $data_repo = $data_repo->search($s);
+            Carbon::setLocale('es');
 
+            foreach ($data_repo as $dat) {
+                $data[] = [
+                    'id' => $dat['id'],
+                    'name' => $dat['name'],
+                    'dni' => $dat['dni'],
+                    'birth_date' => (is_null($dat['birth_date'])) ? '' : Carbon::parse($dat['birth_date'])->format('d/m/Y')
+                ];
+            }
             echo json_encode([
                 'status' => true,
                 'data' => $data
@@ -28,11 +40,38 @@ class entityController
         }
     }
 
+    function createUpdate($request)
+    {
+        try {
+            $data = $request;
+            $repo = new entity();
+            $data['birth_date'] = ($data['birth_date'] != '') ? Carbon::createFromFormat('d/m/Y', $data['birth_date']) : null;
+            if ($data['id'] != 0) {
+                $repo->update($data['id'], $data);
+            } else {
+                $repo->create($data);
+            }
+
+            echo json_encode([
+                'status' => true
+            ]);
+        } catch (Exception $e) {
+            echo json_encode([
+                'status' => false,
+                'message' => $e->getMessage()
+            ]);
+        }
+
+    }
+
     public function find($id)
     {
         try {
             $data = new entity();
             $data = $data->find($id);
+
+            $data['birth_date'] = (is_null($data['birth_date'])) ? '' : Carbon::parse($data['birth_date'])->format('d/m/Y');
+
             echo json_encode([
                 'status' => true,
                 'data' => $data
@@ -72,6 +111,9 @@ switch ($method) {
         break;
     case 'find':
         $met = $obj->find($_REQUEST['id']);
+        break;
+    case 'createUpdate':
+        $met = $obj->createUpdate($_REQUEST);
         break;
     case 'delete':
         $met = $obj->destroy($_REQUEST['id']);
